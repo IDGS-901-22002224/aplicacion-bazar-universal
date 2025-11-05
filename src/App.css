@@ -133,7 +133,7 @@ main.app-content {
 .product-card-info h3 {
   font-size: 1.2rem;
   margin: 0 0 8px 0;
-  min-height: 46px;
+  min-height: 46px; 
   font-weight: 500;
 }
 
@@ -155,7 +155,7 @@ main.app-content {
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--text-light);
-  margin-top: auto;  
+  margin-top: auto;   
   padding-top: 12px;
   border-top: 1px solid var(--border-color);
 }
@@ -299,7 +299,6 @@ main.app-content {
   border-color: var(--primary-hover);
 }
 
-/* Botón Secundario (Compartir) */
 .share-button {
   background-color: var(--bg-white);
   color: var(--text-dark);
@@ -318,24 +317,26 @@ main.app-content {
   margin-top: 1rem;
 }
 
-/* --- 5. Página de Ventas --- */
 .sales-container {
   max-width: 800px;
   margin: 20px auto;
   padding: 1.5rem;
   background-color: var(--bg-white);
   border-radius: var(--border-radius);
+  text-align: center; 
 }
 
 .sales-container h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
+  text-align: left;
 }
 
 .sales-list {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  text-align: left; 
 }
 
 .sale-card {
@@ -371,13 +372,13 @@ main.app-content {
   margin: 0;
 }
 
-/* Botón Secundario (Volver) */
 .back-home-button {
   background-color: var(--bg-white);
   color: var(--text-dark);
   border: 1px solid var(--border-color);
   margin-top: 3rem; 
   text-decoration: none;
+  display: inline-block;
 }
 .back-home-button:hover {
   background-color: var(--bg-light);
