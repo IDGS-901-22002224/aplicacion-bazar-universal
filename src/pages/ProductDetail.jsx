@@ -51,22 +51,6 @@ function ProductDetail() {
     });
   };
 
-  const handleShare = () => {
-    if (navigator.share && product) {
-      navigator.share({
-        title: product.title,
-        text: `¡Mira este producto! ${product.description}`,
-        url: window.location.href, // Comparte la URL actual
-      })
-      .then(() => console.log('Producto compartido'))
-      .catch((error) => console.log('Error al compartir', error));
-    } else {
-      // Fallback para computadoras (copiar al portapapeles)
-      navigator.clipboard.writeText(window.location.href);
-      alert('¡Enlace copiado al portapapeles!');
-    }
-  };
-
   if (loading) {
     return <p>Cargando producto...</p>;
   }
@@ -111,7 +95,6 @@ function ProductDetail() {
 
         <div className="button-group">
           <button onClick={handlePurchase} className="buy-button">Comprar</button>
-          <button onClick={handleShare} className="share-button">Compartir</button>
         </div>
 
         {purchaseMessage && <p className="purchase-message">{purchaseMessage}</p>}
